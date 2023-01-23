@@ -1,2 +1,2 @@
 # Quantumlib
-A Node.js Typescript library for HYBRID Software projects
+A Node.js Typescript library for HYBRID Software extension projects
