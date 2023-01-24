@@ -1,0 +1,27 @@
+{
+  "name": "quantumlib",
+  "version": "0.0.1",
+  "description": "A Node.js Typescript/Javascript library for HYBRID Software PLC software projects",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcgerhard/quantumlib.git"
+  },
+  "keywords": [],
+  "author": "jcgerhard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcgerhard/quantumlib/issues"
+  },
+  "homepage": "https://github.com/jcgerhard/quantumlib#readme",
+  "dependencies": {
+    "typescript": "^4.9.4"
+  }
+}
