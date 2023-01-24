@@ -1,7 +1,7 @@
 <p align="center">
   <img src="assets/quantumlib-readme-300x180.png" height="180px">
   <h3 align="center">
-    A <a href="https://nodejs.org/" target="_blank"  style="text-decoration: none">Node.js</a> Typescript/Javascript library for
+    A <a href="https://nodejs.org/" target="_blank"  style="text-decoration: none">Node.js</a> Typescript/Javascript utility library for
     <a href="https://www.hybridsoftware.com" target="_blank" style="text-decoration: none">HYBRID Software PLC</a> software projects</h3>
 </p>
 <br/>
