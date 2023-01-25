@@ -1,3 +1,3 @@
-const helloPackz: string = "Hello from Packz!";
+const helloPackz = 'Hello from Packz!';
 
-export const packz = {helloPackz}
+export const packz = { helloPackz };

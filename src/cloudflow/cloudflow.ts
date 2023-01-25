@@ -1,3 +1,3 @@
-const helloCloudflow: string = "Hello from Cloudflow!";
+const helloCloudflow = 'Hello from Cloudflow!';
 
-export const cloudflow = {helloCloudflow}
+export const cloudflow = { helloCloudflow };
