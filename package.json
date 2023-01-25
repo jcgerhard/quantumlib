@@ -1,25 +1,38 @@
 {
-  "name": "quantumlib",
-  "version": "0.0.2",
-  "description": "A Node.js Typescript/Javascript library for HYBRID Software PLC software projects",
-  "author": "jcgerhard",
-  "license": "MIT",
-  "keywords": ["HYBRID Software", "Packz", "Cloudflow", "MongoDB"],
-  "main": "dist/quantumlib.js",
-  "types": "dist/quantumlib.d.ts",
-  "files": [
-    "/dist"
-  ],
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jcgerhard/quantumlib.git"
-  },
-  "bugs": {
-    "url": "https://github.com/jcgerhard/quantumlib/issues"
-  },
-  "homepage": "https://github.com/jcgerhard/quantumlib#readme",
-  "dependencies": {
-    "typescript": "^4.9.4"
-  }
+    "name": "quantumlib",
+    "version": "0.0.2",
+    "description": "A Node.js Typescript/Javascript library for HYBRID Software PLC software projects",
+    "author": "jcgerhard",
+    "license": "MIT",
+    "keywords": [
+        "HYBRID Software",
+        "Packz",
+        "Cloudflow",
+        "MongoDB"
+    ],
+    "main": "dist/quantumlib.js",
+    "types": "dist/quantumlib.d.ts",
+    "files": [
+        "/dist"
+    ],
+    "scripts": {
+        "prepare": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jcgerhard/quantumlib.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jcgerhard/quantumlib/issues"
+    },
+    "homepage": "https://github.com/jcgerhard/quantumlib#readme",
+    "dependencies": {
+        "typescript": "^4.9.4",
+        "@typescript-eslint/eslint-plugin": "^5.48.2",
+        "@typescript-eslint/parser": "^5.48.2",
+        "eslint": "^8.32.0",
+        "eslint-config-prettier": "^8.6.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "prettier": "^2.8.3"
+    }
 }
