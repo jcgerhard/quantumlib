@@ -16,7 +16,7 @@
         "/dist"
     ],
     "scripts": {
-        "prepare": "tsc"
+        "prepare": "rm -rf ./dist && tsc"
     },
     "repository": {
         "type": "git",
