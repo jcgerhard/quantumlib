@@ -1,17 +1,15 @@
 <div align="center">
-
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/quantumlib-readme-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/quantumlib-readme-light.png">
-    <img alt="Quantumlib Logo" src="./assets/quantumlib-readme-light.png" height="180px">
-  </picture>
-
+  <img alt="Quantumlib Logo" src="./assets/quantumlib.png" height="128px">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
+  </style>
+  <div style="font-family: 'Montserrat', sans-serif; color: white; font-size: 2.6em">
+    <span style="font-weight: 500">quantum</span><span style="font-weight: 200">|lib</span>
+  </div>
   <h3 align="center">
     A simple Typescript/Javascript utility library for <a href="https://www.hybridsoftware.com" target="_blank" style="text-decoration: none">HYBRID Software PLC</a> software projects
   </h3>
-
 </div>
-
 <br/>
 
 <p align="center">
