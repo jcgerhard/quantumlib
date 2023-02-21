@@ -1,9 +1,4 @@
-/**
- * @type {string}
- * @const
- */
-const defaultUrl = 'mongodb://127.0.0.1:27017';
+const localURL = 'mongodb://127.0.0.1:27017';
+const defaultDB = 'nucleus';
 
-const defaultName = 'nucleus';
-
-export const database = { defaultName, defaultUrl };
+export const database = { defaultDB, localURL };
