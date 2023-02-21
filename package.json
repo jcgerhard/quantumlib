@@ -1,6 +1,6 @@
 {
     "name": "quantumlib",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "A simple Typescript/Javascript utility library for HYBRID Software PLC software projects",
     "author": "jcgerhard",
     "license": "MIT",
