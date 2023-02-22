@@ -1,16 +1,22 @@
-import { platform } from 'os';
-import { applicationsFolder } from '../env/env';
+import { env } from '../env/env';
 
-//const manualBaseURL = `C:\\Program Files\\PACKZ-8.5.1\\Resources\\Manual\\de\\index.html`;
-//const manualBaseURL = `file:///Applications/PACKZ-8.5.1/PACKZ 8.5.1 Build 29.app/Contents/Resources/Manual/en/index_frames.html`;
-
-const manualURL = (packzFolder: string, language: string): string => {
-    const packzAppBundle = '';
-    if (platform.toString() === 'darwin') {
-        return `file://${applicationsFolder}/${packzFolder}/${packzAppBundle}/Contents/Resources/Manual/${language}/index_frames.html`;
+const manualURL = (packzFolder: string, languageToken: string): string | undefined => {
+    const packzAppBundle = 'PACKZ 8.5.1 Build 29.app';
+    if (env.osType === 'darwin') {
+        // MacOS: `file:///Applications/PACKZ-8.5.1/PACKZ%208.5.1%20Build%2029.app/Contents/Resources/Manual/en/index_frames.html`
+        return new URL(
+            `file://${env.applicationsFolderBrowser}/${packzFolder}/${packzAppBundle}/Contents/Resources/Manual/${languageToken}/index_frames.html`,
+        ).toString();
     }
-    if (platform.toString() === 'win32') {
-        return `${applicationsFolder}\\${packzFolder}\\Resources\\Manual\\${language}\\index.html`;
+    if (env.osType === 'win32') {
+        // Windows: `file:///C:/Program%20Files/PACKZ-8.5.1/Resources/Manual/de/index_frames.html`
+        return new URL(
+            `file://${env.applicationsFolderBrowser}/${packzFolder}/${packzAppBundle}/Contents/Resources/Manual/${languageToken}/index_frames.html`,
+        ).toString();
+    }
+    if (env.osType === 'linux') {
+        // Linux: currently not supported!
+        return undefined;
     }
 };
 

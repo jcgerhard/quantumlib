@@ -11,8 +11,10 @@
         "MongoDB",
         "Utilities"
     ],
+    "main": "lib/index.js",
+    "types": "lib",
     "scripts": {
-        "compile": "rm -rf dist/lib && tsc"
+        "build": "rm -rf lib/ && tsc"
     },
     "repository": {
         "type": "git",
