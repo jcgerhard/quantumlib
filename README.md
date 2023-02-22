@@ -3,7 +3,7 @@
   <h1>
     <img alt="Quantumlib Logo" src="./assets/quantumlib.png" height="100px"><br/>quantum|lib</h1>
   <h3 align="center">
-    A simple Typescript/Javascript utility library for <a href="https://www.hybridsoftware.com" target="_blank" style="text-decoration: none">HYBRID Software PLC</a> software projects
+    A simple Typescript/ES6 node utility library for <a href="https://www.hybridsoftware.com" target="_blank" style="text-decoration: none">HYBRID Software PLC</a> software projects
   </h3>
 </div>
 <br/>
