@@ -1,6 +1,6 @@
 {
     "name": "quantumlib",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "A simple Typescript/ES6 node utility library for HYBRID Software PLC software projects",
     "author": "Jan Gerhard",
     "license": "MIT",
@@ -11,8 +11,10 @@
         "MongoDB",
         "Utilities"
     ],
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
     "scripts": {
-        "compile": "rm -rf dist/lib && tsc"
+        "build": "rm -rf lib/ && tsc"
     },
     "repository": {
         "type": "git",
