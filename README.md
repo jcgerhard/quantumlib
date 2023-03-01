@@ -21,3 +21,102 @@
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 ---
+
+- [Compilation](#compilation)
+- [Installation](#installation)
+- [Import and usage](#import-and-usage)
+- [API Documentation](#api-documentation)
+  - [Cloudflow](#cloudflow)
+  - [Database](#database)
+  - [Env](#env)
+  
+## Compilation
+
+- Target: "ES2020"
+- Module: "CommonJS"
+
+## Installation
+
+Install the package as runtime dependency:
+
+```bash
+npm install quantumlib
+```
+
+## Import and usage
+
+You can grab the full package...
+
+```javascript
+// Import statement
+import * as quantumlib from 'quantumlib';
+
+// Usage examples
+const cloudflowManualUrl = quantumlib.cloudflow.getManualURL('https://my.domain.com:9090');
+const homeDir = quantumlib.env.userHome;
+```
+
+Or a more conscious import including only the portions you need...
+
+```javascript
+// Import statement
+import { cloudflow, env } from "quantumlib";
+
+// Usage examples
+const cloudflowManualUrl = cloudflow.getManualURL('https://my.domain.com:9090');
+const homeDir = env.userHome;
+```
+
+## API Documentation
+
+### cloudflow
+
+#### Properties
+
+| Property    | Type     | Value            | Description                      |
+| ----------- | -------- | ---------------- | -------------------------------- |
+| localURL    | `string` | http://127.0.0.1 | The default local Cloudflow URL  |
+| defaultPort | `number` | 9090             | The default local Cloudflow port |
+
+#### manual
+
+Generates the Cloudflow user manual URL based on a given domain or IP.
+
+Signature
+
+```javascript
+function getManualURL(cloudflowBaseUrl: string): string;
+```
+
+Example
+
+```javascript
+import { cloudflow } from "quantumlib";
+
+const cloudflowManualUrl = cloudflow.getManualURL('https://my.domain.com:9090');
+```
+
+Return
+
+The URL of the Cloudflow user manual as a string. Example: `https://my.domain.com:9090/manual/manual.html`.
+
+### database
+
+#### Properties
+
+| Property | Type     | Value                     | Description                       |
+| -------- | -------- | ------------------------- | --------------------------------- |
+| userName | `string` | mongodb://127.0.0.1:27017 | The default local MongoDB URL     |
+| userHome | `string` | nucleus                   | The default MongoDB database name |
+
+### env
+
+#### Properties
+
+| Property                  | Type     | Value | Description |
+| ------------------------- | -------- | ----- | ----------- |
+| userName                  | `string` | -     | -           |
+| userHome                  | `string` | -     | -           |
+| osType                    | `string` | -     | -           |
+| applicationsFolder        | `string` | -     | -           |
+| applicationsFolderBrowser | `string` | -     | -           |
